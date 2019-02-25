@@ -1,0 +1,44 @@
+es:
+  errors:
+    # The default format to use in full error messages.
+    format: "%{attribute} %{message}"
+
+    # The values :model, :attribute and :value are always available for interpolation
+    # The value :count is available when applicable. Can be used for pluralization.
+    messages:
+      model_invalid: "Falló validación: %{errors}"
+      inclusion: "no está incluido en la lista"
+      exclusion: "está reservado"
+      invalid: "es inválido"
+      confirmation: "no corresponde %{attribute}"
+      accepted: "debe ser aceptado"
+      empty: "no puede estar vacío"
+      blank: "no puede estar en blanco"
+      present: "debe estar en blanco"
+      too_long:
+        one: "es muy largo (máximo de 1 caracter)"
+        other: "es muy largo (máximo de %{count} caracteres)"
+      too_short:
+        one: "es muy corta (mínimo de 1 caracter)"
+        other: "es muy corta (mínimo de %{count} caracteres)"
+      wrong_length:
+        one: "la longitud es incorrecta (debería ser de 1 caracter)"
+        other: "la longitud es incorrecta (debería ser de %{count} caracteres)"
+      not_a_number: "no es un número"
+      not_an_integer: "debe ser un entero"
+      greater_than: "debe ser mayor que %{count}"
+      greater_than_or_equal_to: "debe ser mayor o igual a %{count}"
+      equal_to: "debe ser igual a %{count}"
+      less_than: "debe ser menor que %{count}"
+      less_than_or_equal_to: "debe ser menor o igual que %{count}"
+      other_than: "debe ser otro que %{count}"
+      odd: "debe ser impar"
+      even: "debe ser par"
+    
+  activerecord:
+    attributes:
+      user:
+        name: "Nombre"
+        password: "Contraseña"
+      product:
+        name: "Nombre"
